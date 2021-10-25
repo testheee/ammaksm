@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- set the encoding of your site -->
+	<meta charset="utf-8">
+	<!-- set the viewport width and initial-scale on mobile devices -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 
+
+	<title>Контакты</title>
+
+	<!-- include the bootstrap stylesheet -->
+	<link type="text/css" rel="stylesheet" media="all" href="css/bootstrap.css">
+	<!-- include the fancybox stylesheet -->
+	<link type="text/css" rel="stylesheet" media="all" href="css/fancybox.css">
+	<!-- include the site stylesheet -->
+	<link type="text/css" rel="stylesheet" media="all" href="css/all.css">
+</head>
+<body>
+	<!-- main container of all the page elements -->
+	<div id="wrapper">
+		<!-- header of the page -->
+		<header id="header" class="container">
+			<div class="header-top row">
+				<div class="col-md-11" id="nav">
+					<nav class="navbar navbar-default">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#brixton-nav">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse" id="brixton-nav">
+							<ul class="nav navbar-nav">
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="blog.html">Статьи</a></li>
+								<li><a href="terms.html">Условия и положения</a></li>
+								<li><a href="policy.html">Политика конфиденциальности</a></li>
+								<li><a href="contact.html">Контакты</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+
+			</div>
+			<div class="row logo-holder">
+				<div class="col-xs-12">
+					<!-- page logo -->
+					<h1 class="logo"><a href="#">   Элитная недвижимость</a></h1>
+					<!-- page slogan -->
+
+				</div>
+			</div>
+		</header>
+		<!-- contain main informative part of the site -->
+		<main id="main" role="main">
+			<div class="container twocolumns">
+				<div class="row">
+					<!-- posts-holder of the page -->
+					<section class="col-sm-8 col-lg-9 posts-holder">
+						<!-- posts-blog of the page -->
+
+							<h3 class="heading3">Контакты</h3>
+							<!-- commnet-form of the page -->
+							<form action="thanks.html" class="comment-form validate-form">
+								<fieldset>
+									<div class="input-row field">
+										<label for="name1">Новые телефона</label>
+										<input class="input-field required" id="name1" type="text">
+									</div>
+									<div class="input-row field">
+										<label for="email2">Email</label>
+										<input class="input-field required-email" id="email2" type="email">
+									</div>
+									<div class="input-row">
+										<label for="web1">Номер телефона</label>
+										<input class="input-field" type="text" id="web1">
+									</div>
+									<div class="input-row">
+
+										<textarea id="message"  class="input-field textarea" cols="30" rows="10"></textarea>
+									</div>
+									<div class="input-row">
+										<input type="checkbox" name="terms" value="check" required=""/>
+										<a href="policy.html" target="_blank">
+											Я прочитал и согласен с условиями пользовательского соглашения
+										</a>
+										<input class="btn-info" type="submit" value="Отправить">
+									</div>
+								</fieldset>
+							</form>
+						</article>
+					</section>
+					<!-- contain sidebar of the page -->
+
+				</div>
+			</div>
+		</main>
+		<!-- follow-instagram of the page -->
+
+		<!-- footer of the page -->
+		<footer id="footer" class="container">
+			<div class="row">
+				<div class="col-sm-6 col-xs-12">
+					Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+					All rights reserved
+				</div>
+
+			</div>
+		</footer>
+	</div>
+
+	<div class='cookie-banner'>
+		<p>
+			Сайт использует файлы cookie. Они позволяют узнавать вас и получать информацию о вашем пользовательском опыте.Продолжая просмотр сайта, я соглашаюсь с использованием файлов cookie владельцем сайта в соответствии с <a target="_blank" href="https://en.wikipedia.org/wiki/HTTP_cookie">Политикой cookie</a>
+		</p>
+		<button class='close-cookie'>&times;</button>
+	</div>
+	<script>
+		window.onload = function () {
+			$('.close-cookie').click(function () {
+				$('.cookie-banner').fadeOut();
+			})
+		}
+	</script>
+	<script>
+		let elems = document.querySelectorAll('.server-name');
+		elems.forEach((elem) => {
+			elem.innerHTML = window.location.hostname
+		})
+	</script>
+	<!-- include custom JavaScript -->
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+	<!-- include bootstrap JavaScript -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- include instagram JavaScript -->
+
+	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script type="text/javascript">
+		if (navigator.userAgent.match(/IEMobile\/10\.0/) || navigator.userAgent.match(/MSIE 10.*Touch/)) {
+			var msViewportStyle = document.createElement('style')
+			msViewportStyle.appendChild(
+				document.createTextNode(
+					'@-ms-viewport{width:auto !important}'
+				)
+			)
+			document.querySelector('head').appendChild(msViewportStyle)
+		}
+	</script>
+</body>
+</html>
